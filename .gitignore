@@ -1,0 +1,16 @@
+.build/
+.swiftpm/
+.DS_Store
+NEXT_STEPS.md
+AGENTS.md
+CLAUDE.md
+.claude/
+FEATURES.md
+docs/plans/
+docs/specs/
+docs/audits/
+docs/qa/
+.dev.vars*
+wrangler.*
+*.entitlements
+*.xcconfig
