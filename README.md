@@ -1,6 +1,6 @@
-# Zenshin — readiness and training-load engineering
+# Zenshin — time-series readiness and training-load engineering
 
-Zenshin is a recovery-aware strength app for iPhone and Apple Watch. This repository is a **curated, buildable engineering extract** of its deterministic readiness and hybrid-load logic—not the production app repository.
+Zenshin turns sparse, noisy recovery history into explainable daily guidance. Its calculation layer builds rolling personal baselines, redistributes missing-signal weights, reconstructs historical scores without looking ahead, and guards load trends until enough comparison data exists. This repository is a **curated, buildable engineering extract** of that deterministic time-series logic—not the production product repository.
 
 [View Zenshin on the App Store](https://apps.apple.com/app/zenshin-strength-recovery/id6778892282) · [Product page](https://amitsapkota.me/zenshin/)
 
@@ -13,7 +13,7 @@ Zenshin is a recovery-aware strength app for iPhone and Apple Watch. This reposi
 - [`EngineTests.swift`](Tests/ZenshinShowcaseTests/EngineTests.swift): calibration, score direction, historical integrity, sparse-history, and trend-boundary tests.
 - [`SOURCE_PROVENANCE.md`](SOURCE_PROVENANCE.md): exact production commit, original paths, and every adaptation made for this extract.
 
-The production app keeps HealthKit ingestion, SwiftData persistence, workout planning, Apple Watch code, and signing configuration private. Recovery inputs and calculations stay on device.
+The production product ships on iPhone and Apple Watch. It keeps HealthKit ingestion, SwiftData persistence, workout planning, watch synchronization, and signing configuration private; recovery inputs and calculations stay on device.
 
 ## Run the package
 
